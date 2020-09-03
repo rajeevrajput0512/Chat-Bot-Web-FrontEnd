@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel= "stylesheet" type= "text/css" href= "static/css/style.css">
+      <!--Main css-->
+      <link rel= "stylesheet" type= "text/css" href= "static/css/materialize.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/Img/ico.ico" type="image/x-icon">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Chat Bot Devs</title>
+    <style type="text/css">
+    	body
+    	{
+    		background-image: url("Img/back.jpg");
+    	}
+    </style>
+    <script>
+        $(document).ready(function(){
+             $(".aboutClick").click(function(){
+                $(".aboutme").toggle();
+                $(".projects").hide(600);
+                $(".contact").hide(600);
+                $(".achievements").hide(600);
+            });
+        });
+        $(document).ready(function(){
+             $(".projectsClick").click(function(){
+                $(".projects").toggle();
+                $(".aboutme").hide(600);
+                $(".contact").hide(600);
+                $(".achievements").hide(600)
+            });
+        });
+        $(document).ready(function(){
+             $(".contactClick").click(function(){
+                $(".projects").hide(600);
+                $(".aboutme").hide(600);
+                $(".contact").toggle();
+                $(".achievements").hide(600)
+            });
+        });
+        $(document).ready(function(){
+             $(".achievementsClick").click(function(){
+                $(".projects").hide(600);
+                $(".aboutme").hide(600);
+                $(".contact").hide(600);
+                $(".achievements").toggle(600)
+            });
+        });
+    </script>
+</head>
+<body>
+          <div class="container">
+         <div class="widget">
+            <div class="chat_header">
+               <!--Add the name of the bot here -->
+               <span style="color:white;margin-left: 5px;">Aatm nirbhar</span>
+               <span style="color:white;margin-right: 5px;float:right;margin-top: 5px;" id="close">
+               <i class="material-icons">close</i>
+               </span>
+            </div>
+            <!--Chatbot contents goes here -->
+            <div class="chats" id="chats">
+               <div class="clearfix"></div>
+            </div>
+            <!--user typing indicator -->
+            <div class="keypad" >
+               <input type="text" id="keypad" class="usrInput browser-default" placeholder="Type a message..." autocomplete="off">
+            </div>
+         </div>
+         <!--bot widget -->
+         <div class="profile_div" id="profile_div">
+            <img class="imgProfile" src="static/img/botAvatar.png"/>
+         </div>
+      </div>
+      
+    <div class="cursor"></div>
+    <div class="particle"  id="particles-js">
+        <script src="particles.js"></script>
+        <script src="app.js"></script>
+    </div>
+    <div class="wrapper">
+            <header>
+                <div class="heading">
+                    Chat- Bot Devs
+                </div>                 
+            </header>
+        
+        <div class="socialNav">
+            <a class="link" href="#"><i class="fa fa-github"></i></a>
+            <!-- <a class="link" href="https://twitter.com/dh00mk3tu"><i class="fa fa-twitter"></i></a> -->
+            <a class="link" href="#"><i class="fa fa-instagram"></i></a>
+            <a class="link" href="#"><i class="fa fa-facebook"></i></a>
+            <a class="link" href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+
+        <div class="navi" >
+            <a href="#aboutme" class="aboutClick link" id="test" data-text="About Us">
+                About Us
+            </a>
+            <a href="#aboutme" class="projectsClick link" data-text="Projects">
+                Projects
+            </a>
+            <a href="#contact" class="contactClick link" data-text="Contact">
+                Contact
+            </a>
+            <a href="#achievements" class="achievementsClick link" data-text="Achievements">
+                Achievements
+            </a>
+        </div>
+        
+        <div class="aboutme navContainer" id="aboutme" style="display: none;">
+            <div class="content">
+                <div class="title">
+                    Our Work
+                </div>
+                <br><br>
+                <div class="paragraph">
+                    <p>
+                        Greetings, We are a Team of Chats- Bot Devs
+                        <br><br>
+                        First of all We would like to thank you for paying a visit here. We're grateful. 
+                        <br><br>
+                        <b>
+                           Who are We?
+                        </b>
+                        <br><br>
+                        <i>Our Team Provides Interactive Chatbots to Any website According to their Use Case we provide customized bots That will help you to maximize your Interaction With the User/Customer</i>
+                        <br><br>
+                        Team Of Hard Working Individuals 
+                        <br><br>
+                        <img id=cpp src="Img/Team.jfif" alt="Photo Can be added here">
+                        <br><br>
+                        We believe in the Principle of  
+                        <br><i>The Law Of Attraction</i>
+                        and, <br>
+                        <i>Peace. Love. Unity. Respect</i>
+                    </p>
+                </div>    
+            </div>
+        </div>
+        <div class="projects navContainer" id="projects" style="display: none;">
+            <div class="content">
+                <div class="title">
+                    Projects
+                </div>
+                <div class="paragraph">
+                    This Section is Currently Under Development
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="contact navContainer" id="contact" style="display:none;">
+            <div class="content">
+                <div class="title">
+                    Contact
+                </div>
+                <div class="paragraph">
+                    You can reach out to me via multiple platforms. I'd love to hear from you!
+                    <br>
+                    <div class="contactSection">
+                        <a href="#"><i class="fa fa-github"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="achievements navContainer" id="achievements" style="display: none;">
+            <div class="content">
+                <div class="title">
+                    Achievements
+                </div>
+                <div class="paragraph">
+                    This Section is Currently Under Development
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Footer -->
+        <div class="footer">
+            <p>
+                Made With <i class="fa fa-heart" aria-hidden="true"></i> By RVMN
+            </p>
+        </div>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script type="text/javascript" src="static/js/materialize.min.js"></script>
+      <!--Main Script -->
+      <script type="text/javascript" src="static/js/script.js"></script>
+</body>
+</html>
